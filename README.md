@@ -19,3 +19,7 @@ Vite viser deretter en lokal adresse i terminalen, for eksempel:
 - http://localhost:5173/
 Du kan åpne denne i nettleseren for å se prosjektet.
 
+## Refleksjon
+Kommer senere.
+
+
