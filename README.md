@@ -7,4 +7,7 @@ Du må installere eller ha installert:
 - Node.js
 - pnpm
 
+## Refleksjon
+Kommer senere.
+
 
