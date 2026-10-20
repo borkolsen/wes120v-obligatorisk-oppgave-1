@@ -3,9 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mitt WES120V-prosjekt</title>
+  <title>Studentguiden</title>
 </head>
 <body>
-  <h1>Mitt WES120V-prosjekt</h1>
+<header>
+  <h1>Studentguiden</h1>
+  <p>Praktisk informasjon for studiestart</p>
+  <nav aria-label="Hovedmeny">
+    <ul>
+      <li><a href="#pensum">Pensum</a></li>
+      <li><a href="#campus">Campus</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section id="pensum">
+    <h2>Pensum</h2>
+    <p>Her finner du informasjon om pensum for de ulike fagene.</p>
+
+  <ul>
+      <li>Introduksjon til web- og systemutvikling - USN</li>
+    </ul>
+  </section>
+
+
+  <section id="campus">
+    <h2>Campus</h2>
+    <p>Her finner du informasjon om campus, failititeter og studentlivet.</p>
+
+    <figure>
+      <img src="bilder/campus.jpg"
+      alt="Bilde av campusområdet"
+      width="500">
+      <figcaption>Campusområdet ved USN Vestfold</figcaption>
+    </figure>
+
+  </section> 
+
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <p>Kontaktinformasjon for studenttjenester og administrasjon.</p>
+
+    <p> <a href="https://www.usn.no">
+      Besøk USN's nettsider 
+     </a> 
+    </p>
+
+    <p>
+      <a href="mailto:studieinfo@usn.no">
+        Send e-post til studieinfo
+      </a>
+    </p>
+
+    <form>
+      <p>
+        <label for="navn">Navn:</label>
+        <input type="text" id="navn" name="navn" required>
+      </p>
+
+      <p>
+        <label for="email">E-post:</label>
+        <input type="email" id="email" name="email" required>
+      </p>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>Studentguiden - WES120V</p>
+</footer>
+
 </body>
 </html>
