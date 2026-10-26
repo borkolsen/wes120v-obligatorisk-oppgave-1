@@ -1,0 +1,100 @@
+:root {
+    --color-text: #171a1d;
+    --color-surface: #f2f3f4;
+    --color-accent: #2f80ed;
+
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: var(--color-text);
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+h1, 
+h2, 
+h3 {
+    line-height: 1.2;
+}
+
+a {
+    color: var(--color-accent);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible{
+    outline: 3px solid var(--color-accent);
+    outline-offset: 3px;
+}
+
+.page {
+    width: min(100% - 2rem, 70rem);
+    margin-inline: auto;    
+}
+
+.prose {
+    max-width: 65ch;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.prose {
+    overflow-wrap: anywhere;
+}
+
+.page-layout {
+    display: grid;
+    gap: var(--space-lg);
+}
+
+@media (min-width: 48rem) {
+    .page-layout {
+        grid-template-columns: minmax(0, 2fr) minmax(14rem, 1fr);
+    }
+}
+
+/* Flexbox passer godt fordi navigasjonen går langs en akse. */
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    align-items: center;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.button {
+    transition: background-color
+    160ms ease,
+    transform 160ms ease;
+}
+
+.button:hover,
+.button:focus-visible {
+    transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .button {
+        transition: none;
+    }
+}

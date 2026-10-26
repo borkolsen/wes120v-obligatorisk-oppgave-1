@@ -4,13 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Studentguiden</title>
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header>
   <h1>Studentguiden</h1>
   <p>Praktisk informasjon for studiestart</p>
   <nav aria-label="Hovedmeny">
-    <ul>
+    <ul class="nav-list">
       <li><a href="#pensum">Pensum</a></li>
       <li><a href="#campus">Campus</a></li>
       <li><a href="#kontakt">Kontakt</a></li>
@@ -18,9 +20,9 @@
   </nav>
 </header>
 
-<main>
+<main class="page page-layout">
 
-  <section id="pensum">
+  <section id="pensum" class="prose">
     <h2>Pensum</h2>
     <p>Her finner du informasjon om pensum for de ulike fagene.</p>
 
@@ -30,7 +32,7 @@
   </section>
 
 
-  <section id="campus">
+  <section id="campus" class="prose">
     <h2>Campus</h2>
     <p>Her finner du informasjon om campus, failititeter og studentlivet.</p>
 
@@ -43,7 +45,7 @@
 
   </section> 
 
-  <section id="kontakt">
+  <section id="kontakt" class="prose">
     <h2>Kontakt</h2>
     <p>Kontaktinformasjon for studenttjenester og administrasjon.</p>
 
@@ -69,7 +71,7 @@
         <input type="email" id="email" name="email" required>
       </p>
 
-      <button type="submit">Send</button>
+      <button class="button" type="submit">Send</button>
     </form>
   </section>
 </main>
